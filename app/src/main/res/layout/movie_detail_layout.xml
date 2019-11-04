@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDetailBackground"
+    tools:context=".MovieDetail"
+    android:id="@+id/detailScroll">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/detailPoster"
+            android:layout_width="match_parent"
+            android:layout_height="367dp"
+            android:background="@color/colorBackground"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/detailPoster"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Titre"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/detailTitle"
+                android:gravity="right"
+                android:layout_marginTop="10dp"
+                android:text="Release Date"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/detailOverview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/detailDate"
+                android:layout_marginTop="10dp"
+                android:text="Overview"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <WebView
+                android:id="@+id/detailVideo"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="300dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
